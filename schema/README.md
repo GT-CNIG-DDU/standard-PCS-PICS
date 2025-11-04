@@ -1,6 +1,7 @@
-# Schéma _thématique_
+# Schéma
 
-_Indiquer ici les informations pertinentes pour la compréhension et l'utilisation du schéma et supprimer les informations ci-dessous qui sont destinées à aider le GT dans ses travaux._
+Ce répertoire contiendra (le cas échéant) le schéma JSON correspondant au **Standard CNIG PCS-PICS**
+Cette section est en **travaux** et présente ci-desous quelques concepts, ressources et exemples.
 
 ## Réaliser un schéma
 
