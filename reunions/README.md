@@ -1,3 +1,3 @@
-# Ressources
+# Réunions
 
-_Indiquer ici les informations utiles pour trouver et utiliser les ressources._
+Ce répertoire contient les comptes-rendus de réunions du [GT CNIG PCS-PICS](https://cnig.gouv.fr/gt-plans-communaux-et-intercommunaux-de-sauvegarde-a30138.html)
