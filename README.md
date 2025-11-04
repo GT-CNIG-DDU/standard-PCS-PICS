@@ -1,104 +1,140 @@
-# Modèle de dépôt Github pour les standards CNIG
+# Groupe de travail CNIG Plans Communaux et InterCommunaux de sauvegarde (PCS-PICS)
 
-> [!IMPORTANT]
-> **Attention** : Le modèle de fichier README débute après ce paragraphe. Dans la suite,
->
-> * toutes les consignes en citation, comme cette ligne, doivent être supprimées,
-> * tout ce qui est <mark>_surligné_</mark> doit être remplacé.
->
-> Vous trouverez l'ensemble des consignes et conseils pour utiliser ce modèle de dépôt sur [cette page de la documentation](https://app.gitbook.com/o/w6D6SnLwCXQaMMSzcTvp/s/weZQRU1RV5So9WzNyxlW/~/changes/19/la-fabrique-des-standards/realisation-du-standard/utiliser-le-modele-de-depot-github). 
+Ce référentiel publie les documents et travaux du [GT CNIG Plans communaux et intercommunaux de sauvegarde](https://cnig.gouv.fr/gt-plans-communaux-et-intercommunaux-de-sauvegarde-a30138.html) (GT CNIG PCS-PICS), qui fonctionne suivant [ce mandat](https://cnig.gouv.fr/gt-plans-communaux-et-intercommunaux-de-sauvegarde-a30138.html#H_Mandat-du-GT), sous pilotage de la [Direction générale de la sécurité civile et de la gestion des crises ](https://www.securite-civile.interieur.gouv.fr/) (Ministère de l’intérieur / DGSCGC).
 
----
-<!-- Supprimer les trois tirets précédents (qui insèrent une ligne) -->
+## Standard CNIG Plans communaux et intercommunaux de sauvegarde
 
-# Standard <mark>_Nom_</mark>
+Le standard CNIG PCS-PICS est actuellement en phase de : **<mark>_élaboration_</mark>**.
 
-<!-- Indiquer le nom du standard à la place de <mark>_Nom_</mark>. Le texte entre les balises "<mark>_" et "_</mark>" apparaît en italique surligné et doit être remplacé dans ce modèle -->
+_Après élaboration, consultation publique, puis validation par la Commission des standards, il sera destiné à être publié sur la page web des [ressources](url) du GT CNIG PCS-PICS._
 
-> _Insérer une description du standard et des données concernées en quelques lignes. Ici comme dans la suite, il est recommandé de réutiliser le contenu du mandat du GT ou d'autres documents déjà rédigés. Voici plusieurs exemples pour vous inspirer dans la rédaction :_
->
-> * _[standard des opération d'aménagement](https://github.com/cnigfr/schema-operations-amenagement/)_
-> * _[standard risques](https://github.com/cnigfr/Geostandards-Risques)._
->
-> _Afin de clarifier la lecture de cette description sur le site schema.data.gouv, préciser ici lorsque le standard n'est pas accompagné d'un schéma sur schema.data.gouv:_
->
-> [!TIP]
-> Ce standard CNIG ne possède pas de schéma de données directement accessible sur schema.data.gouv.fr. 
-
-Davantage de documentation peut être trouvée sur le site du CNIG au lien suivant : <mark>_insérer le lien vers la page du GT_</mark>.
-
-> Insérer une (ou plusieurs) image(s) pour illustrer la thématique en remplaçant le logo du CNIG ci-dessous.  
-<!-- Pour remplacer le logo du CNIG, suivre le modèle "![texte alternatif](lien vers l'image) Les images peuvent être chargées sur le dépôt Github dans un dossier image -->
-![logo du CNIG à remplacer par l'image du standard](https://cnig.gouv.fr/IMG/png/cnig2022_geolocalise-petit.png)
+> intégrer une image
 
 ## Contexte
 
-> _Décrire le contexte dans lequel le schéma a été élaboré. Il peut être utile de renvoyer ici vers la page du GT CNIG où la documentation du standard correspondant peut être trouvée._
+Sur le fondement de ses pouvoirs de police générale, le maire assure la réponse de premier niveau à toute situation mettant en péril sa population. La commune constitue ainsi le premier maillon de l'organisation générale de la sécurité civile.
+
+A cette fin la commune élabore un **plan communal de sauvegarde (PCS)**.
+
+Document à visée résolument opérationnelle, cet outil de gestion des crises lui permet de préparer la réponse à tout type d'évènements pouvant impacter la population, quelle qu'en soit la nature (accident, phénomène météo, inondation, etc.).
+
+Le PCS a pour objet de définir, par avance, les procédures et organisations qui seront mises en place en cas d'événement. Cette démarche permet, en situation de crise, de ne pas se poser de questions sur l'organisation à mettre en place afin de traiter l'événement de manière rapide et pertinente.
+
+Les communes sont appuyées dans ces missions par les intercommunalités qui disposent des **plans intercommunaux de sauvegarde (PICS)**. Ce plan permet à la commune sinistrée de solliciter les moyens propres de l'EPCI et les moyens mutualisés des communes-membres de l'intercommunalité.
+
+Le PICS organise également la continuité des compétences exercées par l'EPCI en période de crise (voirie, eau potable, assainissement, etc.).
+
+> [!TIP]
+> Plus d'informations dans la [fiche PCS-PICS](https://www.securite-civile.interieur.gouv.fr/reagir/comment-se-preparer-face-aux-risques/plans-communaux-et) du Ministère de l’intérieur.
 
 ## Cadre juridique
 
-> _Citer les textes liés aux données sur lesquelles porte le schéma. Même lorsque l'utilisation du schéma n'est pas mentionnée dans les textes, il peut être utile de faire référence ici aux lois, décrets, arrêtés portant spécifiquement sur les données, leurs conditions de collecte, de partage, etc. Il n'est pas utile de citer les textes plus généraux (portant sur l'open data par exemple)._
+- [Loi n° 2004-811 du 13 août 2004](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000804612)  de modernisation de la sécurité civile
+- [Loi n° 2021-1520 du 25 novembre 2021](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044367862) visant à consolider notre modèle de sécurité civile et valoriser le volontariat des sapeurs-pompiers et les sapeurs-pompiers professionnels
+- Articles [L731-3](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044375292) et [L731-4](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044370020) et autres du Code de la Sécurité Intérieure
+- Codes : code de l’Environnement, code Forestier, etc.
 
-## Finalité
+### Echéances réglementaires :
 
-> _Les enjeux et objectifs liés à la création du standard doivent être précisés ici._
+- Un délai de deux ans après la notification par le Préfet a été donné aux communes pour l’élaboration de leur PCS ;
+- Le délai d’élaboration des PICS, fixé à partir de la date de promulgation de la [loi Matras](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000044367862) arrivera à échéance au mois de novembre 2026.
+
+
+## Enjeux
+
+- respecter le délai réglementaire
+- œuvrer à l’harmonisation des pratiques communales et intercommunales
+- assurer l’interopérabilité des données : pouvoir les partager avec d’autres structures (Préfectures, SDIS) et les assembler aux niveaux supra-communaux (départements, régions, etc..)
+- rationaliser les solutions logicielles et les propositions d’accompagnement disponibles
+
+## Objectifs
+
+Le GT CNIG PCS-PICS vise à :
+
+- rassembler des modèles de documents existants sur la thématique
+- obtenir un consensus avec les collectivités territoriales et l’ensemble des parties prenantes pour réaliser un standard de données conmprenant :
+  - un modèle conceptuel de données
+  - des modèles de fichiers
+  - une symbologie spécifique pour représenter les objets constitutifs des PCS et PICS
+- accompagner les communes et intercommunalités en fournissant des modèles pour la structuration de fichiers
+- mutualiser les données interopérables, afin de pouvoir agréger les PCS et les PICS aux niveaux supérieurs sur les éléments principaux
+- faciliter la mise à jour des PCS-PICS, notamment via l’intégration dans les logiciels de gestion de crise et les plateformes mutualisées et en favorisant l’interopérabilité des données.
+
+Le GT CNIG PCS-PICS travaillera en coordination avec :
+- le [GT CNIG Risques](https://cnig.gouv.fr/gt-risques-a25378.html) et le [géostandard Risques profil PPR](https://github.com/cnigfr/Geostandards-risques-ppr/tree/master/standard) (DICRIM, enjeux, données emprises de risques pris en compte dans le cadre de la réalisation des PCS/PICS).
+- le [GT CNIG ERP](https://cnig.gouv.fr/gt-erp-a24557.html) _(qui serait à relancer...)_
+
+## Animation
+
+Le GT CNIG PCS-PICS est animé par le [SDIS03](https://www.sdis03.com/), avec une co-animation avec l’[Entente Valabre](https://www.valabre.com/) et le [Cerema](https://www.cerema.fr/fr).
+
+## Acteurs
+
+- Institut des risques majeurs (IRMa)
+- Cerema
+- Entente Valabre
+- GIP ATGéri
+- AMF
+- AITF GT SIG TOPO et AITF GT Risques
+- Métropole Aix-Marseille Provence
+- ECAA
+- Cs soprasteria Group (CRIMSON)
+- Riscrises
+- [Club des intercommunalités dans l'élaboration des PICS](https://outil2amenagement.cerema.fr/actualites/club-pour-faciliter-les-plans-intercommunaux-sauvegarde-pics)
+- etc.
+
+> [!IMPORTANT]
+> Le groupe de travail est ouvert à toutes les parties prenantes.
 
 ## Cas d’usage
 
-> _Présenter ici quelques cas d'usage de données conformes au schéma. Ces cas peuvent exister ou être fictifs._
+- Agir rapidement de façon coordonnée en situation de crise, 
+- Eviter de se poser des questions sur l'organisation à mettre en place afin de traiter l'événement de manière rapide et pertinente.
 
 ## Organisation du dépôt
 
-* Le dossier [ressources](ressources) contient les documents utiles pour les utilisateurs du standard ;
-* Le dossier [groupe_de_travail_CNIG](groupe_de_travail_CNIG) contient les comptes-rendus de réunions et les documents de suivi du groupe de travail ;
-* Le dossier [standard](standard) contient le standard ainsi que les documents qui lui sont liés ;
-
-> _A supprimer en l'absence de schéma JSON :_
-
-* Le dossier [schéma](schéma) contient le schéma ainsi que les documents qui lui sont liés.
-
-## Modalités de production des données
-
-> _Dans le cas où la création du standard interviendrait alors que les données sont déjà produites, documenter ici comment leur production a lieu. Dans le cas contraire, cette partie peut être supprimée._
+* Le dossier [documentation](documentation) contient les ressources documentaires du groupe de travail ;
+* Le dossier [reunions](reunions) contient les supports, comptes-rendus de réunions et documents de suivi du groupe de travail ;
+* Le dossier [standard](standard) contient le projet de standard ainsi que les ressources qui lui sont liées ;
+* Le dossier [schema](schema) contiendra (le cas échéant) le schéma json conforme au standard au standard TableSchema pour la publication des données ouvertes sur [data.gouv.fr]([url](https://www.data.gouv.fr/)).
 
 ### Données ouvertes
 
-> _Dans le cas où les données sont publiées en open data, sinon, cette partie peut être supprimée._
-
-Les données relatives à <mark>_la thématique_</mark> sont ouvertes et sont à la disposition de tous. Elles seront publiées sur <https://www.data.gouv.fr>
+> [!TIP]
+> Ce standard CNIG ne possède pas encore de schéma de données directement accessible sur schema.data.gouv.fr.
 
 ## Informations et participation au groupe de travail
 
 ### Méthodologie
 
-> _Cette partie peut être laissée telle quelle. Elle vise à expliquer les modalités d'adoption d'un standard par le CNIG._
-
 La méthodologie des groupes de travail du CNIG repose sur une diversité d'approches complémentaires :
 
 * Construire **une gouvernance ouverte** à l'ensemble des parties prenantes, afin de susciter l’adhésion et de créer le cadre favorable à la pérennité du dispositif ;
 * Promouvoir et exploiter **les retours d'expériences** afin d'étudier les diversités d'usages et embarquer les acteurs en les positionnant au centre du processus d’alimentation des référentiels géographiques ;
-* Privilégier **l’interopérabilité** entre système d'informations à l’échelle nationale pour favoriser le partage et l’échange de données : éviter les doubles stockages, doubles saisies, etc. ;
+* Privilégier **l’interopérabilité** entre systèmes d'informations à l’échelle nationale pour favoriser le partage et l’échange de données : éviter les doubles stockages, doubles saisies, etc. ;
 * S'appuyer sur les **processus éprouvés** de [standardisation du CNIG](http://cnig.gouv.fr/les-standards-cnig-a18959.html#Etapes-de-creation-d-un-Standard-CNIG) et de modélisation suivant [schema.data.gouv.fr](https://guides.etalab.gouv.fr/producteurs-schemas/).
-L’objectif est d'aboutir à terme à un consensus qui se traduise en un standard et un modèle de donnée commun pour la thématique considérée.
+* L’objectif est d'aboutir à terme à un **consensus** qui se traduise par un **standard et un modèle de donnée communs** pour la structuration des PCS-PICS.
 
 ### Actualisation
 
-> _Préciser ici la phase d'avancement dans laquelle se trouve le standard selon la terminologie de [la Fabrique des standards](https://guides.data.gouv.fr/guides-de-data.gouv.fr/fabrique-des-standards/la-fabrique-des-standards) (rédaction, validation, déploiement, etc.). Il peut être utile de donner des éléments de calendrier comme la date de passage en commission des standards ou devant le conseil plénier._
-> _Indiquer également les évolutions prévues ou prévisibles du standard (en fonction des évolutions réglementaires, des retours des utilisateurs, etc.), ainsi que les évolutions prévues pour les bases de données, logiciels, API, etc. concernées par le standard._
+Le standard PCS-PICS évoluera en fonction des évolutions réglementaires et de l'expression des besoins de sa communauté des utilisateurs.
 
-Le projet de standard <mark>_thématique_</mark>, puis le standard une fois validé par le CNIG, évoluera en fonction des évolutions réglementaires et de l'expression des besoins de la communauté des utilisateurs.
-
-Les ressources associées et les bases de données correspondantes seront actualisées conformément au standard CNIG <mark>_thématique_</mark>. Les mises à jour de base de données sont effectuées en modifiant le cas échéant les données qui y figurent déjà.
+Les ressources associées et les bases de données correspondantes seront actualisées conformément au standard CNIG PCS-PICS. Les mises à jour de base de données sont effectuées en modifiant le cas échéant les données qui y figurent déjà.
 
 ### Comment contribuer
 
-> _Indiquer ici comment contribuer au standard. Par exemple :_
-Vous pouvez contribuer au standard en créant une issue sur cette page (il s'agit d'une fonctionnalité permettant de poser une question, de faire une remarque, une suggestion etc. directement sur github, ce qui en informe automatiquement les responsables du dépôt).
+Vous pouvez contribuer aux travaux en créant une issue dans la [section issues](url) de ce référentiel github.
+
+Il s'agit d'une fonctionnalité permettant de poser une question, de proposer une suggestion d'amélioration ou de correction... directement sur ce référentiel github, ce qui en informe automatiquement les animateurs du GT CNIG PCS-PICS et ses participants (qui se seront préalablement abonnés à la réception des issues par mail).
+
+> [!TIP]
+> Un **Manuel du débutant pour Github** est disponible dans le répertoire [documentation](documentation)
 
 ### Nous contacter
 
-Pour contacter le GT CNIG <mark>_thématique_</mark>, écrire à l’adresse cnig[at]cnig.fr.
+[Page de contact du CNIG](https://cnig.gouv.fr/spip.php?page=contact)
 
 ### Licence
 
-Les travaux du GT CNIG <mark>_thématique_</mark> sont réalisés sous [Licence Ouverte Etalab 2.0](https://www.etalab.gouv.fr/licence-ouverte-open-licence/).
+Les travaux du GT CNIG PCS-PICS sont réalisés sous [Licence Ouverte Etalab 2.0](https://www.etalab.gouv.fr/licence-ouverte-open-licence/).
+
