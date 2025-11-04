@@ -1,3 +1,3 @@
-# Espace du Groupe de travail du CNIG
+# Documentation
 
-_Ce dossier est dédié aux travaux du GT du CNIG. Il a vocation à héberger les documents de travail (CR de GT, supports, etc.). Il n'est pas obligatoire de le conserver, notamment si un autre outil que github est utilisé pour le travail collaboratif._
+Ce répertoire contient les ressources documentaires du [GT CNIG PCS-PICS](https://cnig.gouv.fr/gt-plans-communaux-et-intercommunaux-de-sauvegarde-a30138.html)
