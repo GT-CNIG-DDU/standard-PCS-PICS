@@ -1,0 +1,231 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>
+</help_text><element><id>UMLClass</id><coordinates><x>70</x><y>26</y><w>70</w><h>21</h></coordinates><panel_attributes>*MCD PCS-PICS*</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>707</x><y>26</y><w>70</w><h>21</h></coordinates><panel_attributes>09/03/2026
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>406</x><y>313</y><w>147</w><h>119</h></coordinates><panel_attributes>*PLAN_SAUVEGARDE*
+bg=pink
+--
+pk   id_pcs : identifiant    
+       type_plan : liste
+       etat : liste
+       nomproc : liste
+       datappro : date
+       datefin : date
+       siren : texte
+       nom_plan : texte
+       urlplan : url</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>784</x><y>215</y><w>217</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+comprend des
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>290;100;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>119</x><y>642</y><w>1050</w><h>168</h></coordinates><panel_attributes>/MOYENS/
+valign=top
+fg=#995400
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>301</x><y>292</y><w>189</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+concerne
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>10;20;250;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>161</x><y>264</y><w>147</w><h>42</h></coordinates><panel_attributes>*COMMUNE*
+bg=green
+--
+pk   insee
+       nomcom : texte    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>644</x><y>215</y><w>147</w><h>84</h></coordinates><panel_attributes>*PS_OBLIGATION*
+bg=orange
+--
+pk   id_obligation : identifiant    
+       obligatoire
+       type_notification : liste
+       date_notification : date
+       date_obligation : date
+       source_obligation : texte</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>546</x><y>278</y><w>112</w><h>56</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+impose
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>140;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>658</x><y>82</y><w>147</w><h>63</h></coordinates><panel_attributes>*PS_DOC_OBLIGATOIRE*
+bg=orange
+--
+pk   id_obligation : identifiant    
+       nom_document
+       type_document
+       presence</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>721</x><y>138</y><w>63</w><h>91</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+comprend
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLClass</id><coordinates><x>987</x><y>250</y><w>147</w><h>70</h></coordinates><panel_attributes>*ZONAGE_GENERATEUR*
+bg=orange
+--
+pk   id_zonage : identifiant
+       type_zone : liste
+       description : texte
+       code_procedure : liste
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1043</x><y>313</y><w>91</w><h>133</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+définit des
+m1=0..n
+m2=1..1
+</panel_attributes><additional_attributes>100;170;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1043</x><y>432</y><w>147</w><h>105</h></coordinates><panel_attributes>*ENJEU*
+bg=orange
+--
+pk   id_enjeu : identifiant
+       id_ref_externe  : identifiant
+       refexterne : url
+       nom_enjeu : texte
+       type_enjeu : liste
+       type_vulnerabilite : liste
+       datenjeu : date
+*Géométrie : Surfacique*
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>742</x><y>369</y><w>147</w><h>105</h></coordinates><panel_attributes>*ZONE_ALEA*
+bg=orange
+--
+pk   id_zone_alea : identifiant
+       niveau_alea : liste
+       intensite : liste
+       type_intensite : liste
+       occurrence :  : liste
+*Géométrie : Surfacique*
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>546</x><y>376</y><w>210</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+comprend
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>280;10;10;30</additional_attributes></element><element><id>Relation</id><coordinates><x>882</x><y>418</y><w>175</w><h>49</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+définit des
+m1=0..n
+m2=1..1
+</panel_attributes><additional_attributes>230;40;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>551</y><w>63</w><h>105</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+nécessite
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>20;130;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>663</y><w>147</w><h>105</h></coordinates><panel_attributes>*MOYENS_HUMAINS*
+bg=orange
+--
+pk   id_moy_humain : identifiant
+       geometrie: ponctuelle
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>357</x><y>642</y><w>266</w><h>168</h></coordinates><panel_attributes>*MOYENS_LOGISTIQUES*
+bg=orange
+--
+pk   id_moy_logistique : identifiant
+      nomenclature_id
+      unite
+      nbre_unites
+     id_proprietaire
+     id_responsable
+     id_gestionnaire
+      adresse_stockage
+      qualif_obligatoire: booleen
+      type_qualif : il a certainement falloir uine table intermédiaire
+      condition_mobilisation
+      description
+      commentaire
+       geometrie :ponctuelle
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>742</x><y>677</y><w>413</w><h>105</h></coordinates><panel_attributes>*MOYENS_HEBERGEMENTS*
+bg=orange
+--
+pk   id_moy_herbegemnt : identifiant
+	id_ref_bdnb: identifiant référentiel BDNB : doit permettre de récupérer 
+les informations socle des batiment : localisation, adresse
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>126</x><y>425</y><w>357</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+met en oeuvre
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>10;90;490;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>488</y><w>147</w><h>70</h></coordinates><panel_attributes>*MISSION/OBJECTIF_A_ATTEINDRE*
+bg=orange
+--
+pk   id_mission : identifiant    
+       type: liste issue de la nomenclature nationale
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>315</x><y>502</y><w>147</w><h>70</h></coordinates><panel_attributes>*MISSION_DOCUMENTS*
+bg=orange
+--
+pk   id_contrat_mission : identifiant    
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>509</y><w>119</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+basée sur
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>150;30;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>483</x><y>488</y><w>266</w><h>63</h></coordinates><panel_attributes>stockage des documents contractuels 
+pour la mise à disposition des moyens
+ nécessaires à l'exécution de la mission :
+ conventions,procédure 
+contenant les conditions d'accès et les modalités d'activation
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>448</x><y>54</y><w>133</w><h>91</h></coordinates><panel_attributes>documents constitutifs du PCS : 
+DICRIM, 
+repères de crues, 
+arrêtés d'approbation
+exercices/retex?
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>966</x><y>68</y><w>133</w><h>119</h></coordinates><panel_attributes>*PS_EXERCICES*
+bg=orange
+--
+pk   id_exercice : identifiant    
+       nom_exercice
+       type_exercice
+       date_debut
+       date_fin
+       participants
+       description
+       retex_chaud: booleen
+       retex_froid: booleen
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>798</x><y>103</y><w>182</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+comprend
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>10;20;240;30</additional_attributes></element><element><id>UMLClass</id><coordinates><x>21</x><y>96</y><w>147</w><h>70</h></coordinates><panel_attributes>*COMPETENCE*
+bg=orange
+--
+pk   id_mission : identifiant    
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>215</y><w>140</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+concerne
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>180;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>294</x><y>54</y><w>147</w><h>42</h></coordinates><panel_attributes>*EPCI*
+bg=green
+--
+pk  siren?
+       nomepci : texte    </panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>224</x><y>159</y><w>147</w><h>63</h></coordinates><panel_attributes>*COMPETENCE_STRUCTURE*
+bg=orange
+--
+pk   id_mission : identifiant    
+       delegation : boolean
+       delegataire: texte
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>161</x><y>131</y><w>84</w><h>84</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+concerne
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>90;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>75</y><w>63</w><h>98</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+concerne
+m1=1..n
+m2=1..1
+</panel_attributes><additional_attributes>50;120;10;70;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>14</x><y>12</y><w>1281</w><h>812</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>945</x><y>530</y><w>133</w><h>77</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+est un
+m1=0..n
+m2=1..1
+</panel_attributes><additional_attributes>160;10;100;80;10;80</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>854</x><y>551</y><w>98</w><h>49</h></coordinates><panel_attributes>BDNB
+--
+Base National des Batiments à tester :
+complétude
+bg=gray
+fg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>924</x><y>593</y><w>70</w><h>98</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+est un
+m1=0..n
+m2=1..1
+</panel_attributes><additional_attributes>70;120;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>413</x><y>593</y><w>476</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+comprend
+m1=0..n
+m2=1..1
+</panel_attributes><additional_attributes>10;70;660;10</additional_attributes></element><element><id>Relation</id><coordinates><x>266</x><y>572</y><w>602</w><h>98</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+accueille
+m1=0..n
+m2=1..1
+</panel_attributes><additional_attributes>10;120;140;50;370;20;840;10</additional_attributes></element></diagram>
